@@ -322,7 +322,7 @@ export default class MessageContainer<
     return (
       <View
         style={
-          this.props.alignTop ? styles.containerAlignTop : styles.container
+          [this.props.alignTop ? styles.containerAlignTop : styles.container, this.props.bubbleContainerStyle]]
         }
       >
         <FlatList
